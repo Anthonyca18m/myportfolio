@@ -1,2 +1,2 @@
 # myportfolio
-Mi portafolio hecho con angular
+Mi portafolio hecho con angular y Firebase
