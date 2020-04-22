@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Redesociales, Author, Body } from '../interfaces/info-pagina-interface';
+import { Redesociales, Author, Body } from '../interfaces/info-pagina.interface';
 
 @Injectable({
   providedIn: 'root'

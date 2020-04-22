@@ -8,19 +8,14 @@
                     <p class="text-white">
                         Envia tu propuesta laboral, o proyectos donde deseas que participe.
                     </p>
-                    <div class="subcribe-form" id="mc_embed_signup">
-                        <form target="_blank" novalidate="true" action="" method="get" class="subscription relative">
-                            <input name="email" placeholder="Email address" onfocus="this.placeholder = ''"
-                                onblur="this.placeholder = 'Email address'" required="" type="email">
-
+                    <div class="subcribe-form">
+                        <form [formGroup]="contactForm" (ngSubmit)="onSaveForm()" class="subscription relative">
+                            <input formControlName="email" placeholder="Email address"type="email">
                             <div class="mb-2">
                                 <p class="mb-30 title_color text-white">Razón: </p>
-                                <input name="razon" placeholder="Ingrese Razón" onfocus="this.placeholder = ''"
-                                onblur="this.placeholder = 'Ingrese Razón'" required="" type="text">
-
+                                <input formControlName="razon" placeholder="Ingrese Razón" type="text">
                             </div>
-                            <button class="primary-btn hover d-inline">Enviar</button>
-                            <div class="info"></div>
+                            <button type="submit" class="btn btn-primary" >Enviar</button>
                         </form>
                     </div>
                 </div>
